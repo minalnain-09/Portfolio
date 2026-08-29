@@ -1,0 +1,214 @@
+/* ==========================================================================
+   ABOUT & SKILLS SECTION STYLES (Ref.jpg sticky note layout)
+   ========================================================================== */
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  align-items: start;
+}
+
+/* ==================== LEFT: NOTE CARD BIO ==================== */
+.note-card {
+  position: relative;
+  background: var(--bg-card);
+  border: 2px solid var(--border-dark);
+  border-radius: var(--radius-md);
+  padding: 2.5rem 2.2rem 2.2rem;
+  box-shadow: var(--shadow-card);
+}
+
+.sticky-header-tag {
+  display: inline-block;
+  background: var(--accent-yellow);
+  color: #18181b;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 0.3rem 0.8rem;
+  border-radius: var(--radius-sm);
+  border: 1.5px solid var(--border-dark);
+  margin-bottom: 1.5rem;
+}
+
+.bio-text {
+  font-size: 1.02rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+  margin-bottom: 1.25rem;
+}
+
+.lead-text {
+  font-size: 1.15rem;
+  color: var(--text-main);
+  font-weight: 500;
+}
+
+/* ==================== STATS ROW ==================== */
+.stats-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin: 1.8rem 0;
+}
+
+.stat-box {
+  padding: 1rem 0.75rem;
+  border-radius: var(--radius-sm);
+  border: 1.5px solid var(--border-dark);
+  text-align: center;
+  box-shadow: 2px 2px 0px var(--border-dark);
+}
+
+.stat-yellow { background-color: var(--bg-note-yellow); }
+.stat-green  { background-color: var(--bg-note-green); }
+.stat-blue   { background-color: var(--bg-note-blue); }
+
+.stat-num {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--text-main);
+  line-height: 1.1;
+}
+
+.stat-lbl {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  margin-top: 0.35rem;
+  text-transform: uppercase;
+}
+
+/* ==================== SOFT SKILLS ==================== */
+.soft-skills-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1.5px dashed var(--border-dashed);
+}
+
+.soft-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0.35rem 0.75rem;
+  background: var(--bg-card-subtle);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-full);
+  color: var(--text-muted);
+}
+
+.soft-pill svg {
+  width: 14px;
+  height: 14px;
+  color: var(--accent-orange);
+}
+
+/* ==================== RIGHT: SKILLS MATRIX ==================== */
+.about-skills-card {
+  position: relative;
+}
+
+.skills-card-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.skill-category-block {
+  background: var(--bg-card);
+  border: 2px solid var(--border-dark);
+  border-radius: var(--radius-md);
+  padding: 1.4rem 1.6rem;
+  box-shadow: var(--shadow-card);
+}
+
+.skill-cat-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--text-main);
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+}
+
+.skill-chip {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 0.4rem 0.85rem;
+  border-radius: var(--radius-sm);
+  border: 1.5px solid var(--border-dark);
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+  cursor: default;
+}
+
+.skill-chip:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 2px 2px 0px var(--border-dark);
+}
+
+.chip-yellow {
+  background-color: var(--accent-yellow);
+  color: #18181b;
+}
+
+.chip-green {
+  background-color: var(--accent-green);
+  color: #064e3b;
+}
+
+.chip-blue {
+  background-color: var(--accent-blue);
+  color: #1e3a8a;
+}
+
+/* ==================== RETRO BANNER (JUST FOR FUN) ==================== */
+.skills-retro-banner {
+  background: var(--bg-card);
+  border: 2px solid var(--border-dark);
+  border-radius: var(--radius-md);
+  padding: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  box-shadow: var(--shadow-card);
+}
+
+.retro-banner-img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: var(--radius-sm);
+  border: 1.5px solid var(--border-dark);
+}
+
+.retro-banner-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+/* ==================== RESPONSIVE ABOUT ==================== */
+@media (max-width: 850px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+}

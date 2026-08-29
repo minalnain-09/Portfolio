@@ -1,0 +1,234 @@
+/* ==========================================================================
+   CONTACT SECTION STYLES (Signature ref.jpg Robin contact box)
+   ========================================================================== */
+
+.contact-section {
+  padding-bottom: 5rem;
+}
+
+.contact-card-wrapper {
+  position: relative;
+  max-width: 780px;
+  margin: 0 auto;
+  background: var(--bg-card);
+  border: 3px solid var(--border-dark);
+  border-radius: var(--radius-md);
+  padding: 3.5rem 2.8rem 2.8rem;
+  box-shadow: var(--shadow-card);
+  text-align: center;
+}
+
+/* ==================== HANDWRITTEN BANNER ==================== */
+.handwritten-banner {
+  position: absolute;
+  top: -24px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: var(--font-hand);
+  font-size: 1.6rem;
+  color: var(--text-main);
+  background: var(--bg-card);
+  padding: 0.2rem 1rem;
+  border: 2px solid var(--border-dark);
+  border-radius: var(--radius-full);
+  box-shadow: 2px 2px 0px var(--border-dark);
+}
+
+.handwritten-banner svg {
+  color: var(--accent-orange);
+}
+
+/* ==================== HUGE TITLE ==================== */
+.contact-huge-title {
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 6vw, 4.2rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: var(--text-main);
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+/* ==================== INNER NOTE BOX ==================== */
+.contact-note-box {
+  position: relative;
+  background: var(--bg-note-yellow);
+  border: 2px solid var(--border-dark);
+  border-radius: var(--radius-sm);
+  padding: 2.2rem 2rem 1.8rem;
+  box-shadow: 3px 3px 0px var(--border-dark);
+  margin-bottom: 2rem;
+}
+
+[data-theme="dark"] .contact-note-box {
+  background: #2a2517;
+}
+
+.contact-note-heading {
+  font-family: var(--font-mono);
+  font-size: 0.88rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  color: #18181b;
+  line-height: 1.6;
+  margin-bottom: 1.4rem;
+  text-transform: uppercase;
+}
+
+[data-theme="dark"] .contact-note-heading {
+  color: #fef08a;
+}
+
+/* ==================== EMAIL COPY BAR ==================== */
+.email-copy-bar {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: var(--bg-card);
+  border: 2px solid var(--border-dark);
+  border-radius: var(--radius-full);
+  padding: 0.5rem 0.6rem 0.5rem 1.25rem;
+  box-shadow: 2px 2px 0px var(--border-dark);
+}
+
+.email-address-link {
+  font-family: var(--font-mono);
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text-main);
+  text-decoration: none;
+}
+
+.email-address-link:hover {
+  text-decoration: underline;
+}
+
+.copy-btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 1.5px solid var(--border-dark);
+  background: var(--accent-yellow);
+  color: #18181b;
+  cursor: pointer;
+  transition: transform var(--transition-fast);
+}
+
+.copy-btn:hover {
+  transform: scale(1.08);
+}
+
+.copy-btn svg {
+  width: 16px;
+  height: 16px;
+}
+
+.copy-tooltip {
+  position: absolute;
+  bottom: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%);
+  background: #18181b;
+  color: #ffffff;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 0.25rem 0.6rem;
+  border-radius: var(--radius-sm);
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--transition-fast);
+}
+
+.copy-btn.copied .copy-tooltip {
+  opacity: 1;
+}
+
+/* ==================== STATUS NOTE ==================== */
+.contact-status-note {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+  margin-bottom: 2rem;
+}
+
+.handwritten-status {
+  font-family: var(--font-hand);
+  font-size: 1.5rem;
+  color: var(--text-muted);
+}
+
+.contact-email-small {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--accent-orange);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.contact-email-small:hover {
+  text-decoration: underline;
+}
+
+/* ==================== SOCIAL PILLS ==================== */
+.contact-social-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+}
+
+.social-pill-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.55rem 1.1rem;
+  border-radius: var(--radius-full);
+  border: 1.5px solid var(--border-dark);
+  background: var(--bg-card-subtle);
+  color: var(--text-main);
+  font-family: var(--font-display);
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 2px 2px 0px var(--border-dark);
+  transition: all var(--transition-fast);
+}
+
+.social-pill-link:hover {
+  background: var(--accent-yellow);
+  color: #18181b;
+  transform: translate(-2px, -2px);
+  box-shadow: 4px 4px 0px var(--border-dark);
+}
+
+.social-pill-link svg {
+  width: 15px;
+  height: 15px;
+}
+
+/* ==================== RESPONSIVE CONTACT ==================== */
+@media (max-width: 600px) {
+  .contact-card-wrapper {
+    padding: 3rem 1.25rem 2rem;
+  }
+
+  .email-copy-bar {
+    flex-direction: column;
+    padding: 0.75rem 1rem;
+    border-radius: var(--radius-md);
+  }
+
+  .contact-social-row {
+    flex-direction: column;
+  }
+}

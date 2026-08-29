@@ -1,0 +1,191 @@
+/* ==========================================================================
+   EDUCATION SECTION STYLES (Vertical Timeline with Score Badges)
+   ========================================================================== */
+
+.timeline-wrapper {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  padding-left: 2rem;
+}
+
+.timeline-spine {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 20px;
+  width: 3px;
+  background: var(--border-dark);
+  border-radius: 2px;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 2.5rem;
+  padding-left: 2.5rem;
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+/* ==================== TIMELINE DOTS ==================== */
+.timeline-dot {
+  position: absolute;
+  left: -20px;
+  top: 1.5rem;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 2px solid var(--border-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 2px 2px 0px var(--border-dark);
+  z-index: 2;
+}
+
+.timeline-dot svg {
+  width: 20px;
+  height: 20px;
+}
+
+.dot-lpu { background-color: var(--accent-yellow); color: #18181b; }
+.dot-school { background-color: var(--accent-green); color: #064e3b; }
+
+/* ==================== TIMELINE CARD ==================== */
+.timeline-card {
+  position: relative;
+  background: var(--bg-card);
+  border: 2px solid var(--border-dark);
+  border-radius: var(--radius-md);
+  padding: 2rem 2.2rem;
+  box-shadow: var(--shadow-card);
+  transition: transform var(--transition-smooth), box-shadow var(--transition-smooth);
+}
+
+.timeline-card:hover {
+  transform: translateX(4px);
+  box-shadow: var(--shadow-card-hover);
+}
+
+.timeline-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 0.85rem;
+}
+
+.timeline-school {
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--text-main);
+}
+
+.timeline-loc {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-top: 0.25rem;
+}
+
+.timeline-loc svg {
+  width: 14px;
+  height: 14px;
+}
+
+/* ==================== GRADE BADGES ==================== */
+.grade-badge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.45rem 0.9rem;
+  border-radius: var(--radius-sm);
+  border: 1.5px solid var(--border-dark);
+  box-shadow: 2px 2px 0px var(--border-dark);
+  flex-shrink: 0;
+}
+
+.grade-yellow { background-color: var(--accent-yellow); color: #18181b; }
+.grade-green  { background-color: var(--accent-green); color: #064e3b; }
+.grade-blue   { background-color: var(--accent-blue); color: #1e3a8a; }
+
+.grade-label {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.grade-val {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.timeline-degree {
+  font-size: 1rem;
+  color: var(--text-main);
+  margin-bottom: 0.5rem;
+}
+
+.timeline-date {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--text-light);
+  margin-bottom: 0.85rem;
+}
+
+.timeline-date svg {
+  width: 14px;
+  height: 14px;
+}
+
+.timeline-details {
+  font-size: 0.92rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+/* ==================== RESPONSIVE TIMELINE ==================== */
+@media (max-width: 650px) {
+  .timeline-wrapper {
+    padding-left: 0.5rem;
+  }
+
+  .timeline-spine {
+    left: 10px;
+  }
+
+  .timeline-dot {
+    left: -10px;
+    width: 34px;
+    height: 34px;
+  }
+
+  .timeline-dot svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .timeline-item {
+    padding-left: 1.8rem;
+  }
+
+  .timeline-card-header {
+    flex-direction: column;
+  }
+
+  .grade-badge {
+    align-self: flex-start;
+  }
+}

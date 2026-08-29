@@ -1,0 +1,151 @@
+/* ==========================================================================
+   TRAINING & CERTIFICATES SECTION STYLES (Ref.jpg Inspired)
+   ========================================================================== */
+
+.training-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+  gap: 2rem;
+}
+
+.training-card {
+  position: relative;
+  background: var(--bg-card);
+  border: 2px solid var(--border-dark);
+  border-radius: var(--radius-md);
+  padding: 2rem 1.75rem 1.75rem;
+  box-shadow: var(--shadow-card);
+  display: flex;
+  flex-direction: column;
+  transition: transform var(--transition-smooth), box-shadow var(--transition-smooth);
+}
+
+.training-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-card-hover);
+}
+
+.card-highlight {
+  background: var(--bg-note-yellow);
+}
+
+/* ==================== CARD HEADER ==================== */
+.card-icon-header, .cert-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.25rem;
+}
+
+.flag-icon, .ai-icon {
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.cert-icon-wrap {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-sm);
+  border: 1.5px solid var(--border-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 2px 2px 0px var(--border-dark);
+}
+
+.cert-icon-wrap.bg-yellow { background-color: var(--accent-yellow); color: #18181b; }
+.cert-icon-wrap.bg-green  { background-color: var(--accent-green); color: #064e3b; }
+.cert-icon-wrap.bg-pink   { background-color: var(--accent-pink); color: #831843; }
+
+.cert-icon-wrap svg {
+  width: 22px;
+  height: 22px;
+}
+
+.date-badge {
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  background: var(--bg-card-subtle);
+  padding: 0.25rem 0.6rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-light);
+}
+
+/* ==================== CARD TYPOGRAPHY ==================== */
+.card-heading {
+  font-family: var(--font-display);
+  font-size: 1.22rem;
+  font-weight: 700;
+  color: var(--text-main);
+  line-height: 1.3;
+  margin-bottom: 0.35rem;
+}
+
+.card-sub {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--accent-orange);
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.card-description {
+  font-size: 0.92rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-bottom: 1.4rem;
+}
+
+/* ==================== BADGE LIST ==================== */
+.badge-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-top: auto;
+}
+
+.badge-mini {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 0.25rem 0.6rem;
+  border-radius: var(--radius-full);
+  background: var(--bg-card-subtle);
+  border: 1px solid var(--border-light);
+  color: var(--text-main);
+}
+
+/* ==================== CERTIFICATE BUTTON ==================== */
+.cert-link-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-top: auto;
+  padding: 0.65rem 1rem;
+  background: var(--bg-card-subtle);
+  border: 1.5px solid var(--border-dark);
+  border-radius: var(--radius-sm);
+  font-family: var(--font-display);
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text-main);
+  text-decoration: none;
+  box-shadow: 2px 2px 0px var(--border-dark);
+  transition: all var(--transition-fast);
+}
+
+.cert-link-btn:hover {
+  background: var(--accent-yellow);
+  color: #18181b;
+  transform: translate(-1px, -1px);
+  box-shadow: 3px 3px 0px var(--border-dark);
+}
+
+.cert-link-btn svg {
+  width: 15px;
+  height: 15px;
+}

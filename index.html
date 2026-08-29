@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Minal Nain — Tech Portfolio</title>
+  <meta name="description"
+    content="Portfolio of Minal Nain — Computer Science & Engineering student, AI enthusiast & Full-Stack Developer." />
+
+  <!-- Google Fonts: Space Grotesk (Display), Inter (Body), Caveat (Handwritten accents) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700;800&family=Space+Mono:wght@400;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="styles/main.css" />
+  <link rel="stylesheet" href="styles/navbar.css" />
+  <link rel="stylesheet" href="styles/hero.css" />
+  <link rel="stylesheet" href="styles/about.css" />
+  <link rel="stylesheet" href="styles/projects.css" />
+  <link rel="stylesheet" href="styles/education.css" />
+  <link rel="stylesheet" href="styles/training.css" />
+  <link rel="stylesheet" href="styles/achievements.css" />
+  <link rel="stylesheet" href="styles/contact.css" />
+</head>
+
+<body class="grid-paper">
+
+  <!-- ==================== TOP NAVIGATION ==================== -->
+  <header class="navbar-wrapper">
+    <nav class="navbar" aria-label="Main Navigation">
+      <div class="nav-left">
+        <a href="#hero" class="nav-monogram" aria-label="Home">
+          <span class="mono-symbol">✦</span>
+          <span class="mono-text">MINAL.DEV</span>
+        </a>
+        <div class="status-badge">
+          <span class="pulse-dot"></span>
+          <span class="status-text">OPEN TO OPPORTUNITIES</span>
+        </div>
+      </div>
+
+      <div class="nav-center" id="navMenu">
+        <ul class="nav-links">
+          <li><a href="#hero" class="nav-link active"><span class="dot-indicator dot-yellow"></span>Home</a></li>
+          <li><a href="#about" class="nav-link"><span class="dot-indicator dot-green"></span>About</a></li>
+          <li><a href="#projects" class="nav-link"><span class="dot-indicator dot-blue"></span>Projects</a></li>
+          <li><a href="#skills-training" class="nav-link"><span class="dot-indicator dot-pink"></span>Training</a></li>
+          <li><a href="#education" class="nav-link"><span class="dot-indicator dot-orange"></span>Education</a></li>
+          <li><a href="#contact" class="nav-link"><span class="dot-indicator dot-purple"></span>Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="nav-right">
+        <!-- Dark Mode Toggle -->
+        <button id="themeToggle" class="theme-toggle-btn" aria-label="Toggle dark/light theme" title="Toggle theme">
+          <i data-lucide="sun" class="sun-icon"></i>
+          <i data-lucide="moon" class="moon-icon"></i>
+        </button>
+
+        <a href="#contact" class="pill-btn nav-cta">
+          <span>CONTACT ME</span>
+          <i data-lucide="arrow-up-right" class="btn-icon"></i>
+        </a>
+
+        <!-- Mobile Hamburger -->
+        <button class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ==================== HERO SECTION ==================== -->
+    <section id="hero" class="hero-section">
+      <div class="hero-container container">
+
+        <!-- Top decorative labels -->
+        <div class="hero-doodles">
+          <div class="doodle-tag tag-green reveal-item">
+            <span class="tape-strip"></span>
+            <span>MADE WITH CODE</span>
+          </div>
+          <div class="handwritten-hint reveal-item">
+            <span>my name is</span>
+            <svg class="curved-arrow" width="40" height="24" viewBox="0 0 40 24" fill="none">
+              <path d="M2 4C12 18 24 22 36 12M36 12L28 10M36 12L34 20" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </div>
+          <div class="doodle-tag tag-pink reveal-item">
+            <span class="tape-strip"></span>
+            <span>SWEAT THE DETAILS</span>
+          </div>
+        </div>
+
+        <!-- Big Display Name Box -->
+        <div class="hero-name-card reveal-item">
+          <div class="name-badge-corner">
+            <span class="badge-pill bg-yellow">Tech Student & Builder</span>
+          </div>
+
+          <h1 class="hero-name">MINAL NAIN</h1>
+
+          <div class="name-status-row">
+            <span class="location-tag">
+              <i data-lucide="map-pin" class="tag-icon"></i> Punjab & Haryana, IN
+            </span>
+            <span class="meta-tag">
+              <i data-lucide="graduation-cap" class="tag-icon"></i> B.Tech CSE (CGPA 9.07)
+            </span>
+          </div>
+        </div>
+
+        <!-- Big Statement Headline -->
+        <div class="hero-statement-wrapper reveal-item">
+          <h2 class="hero-statement">
+            I craft intelligent software <span class="sparkle-icon">✦</span>, AI-driven tools & clean web experiences
+            that solve real problems. 🌸
+          </h2>
+        </div>
+
+        <!-- Hero Actions & Floating Sticker Elements -->
+        <div class="hero-bottom-grid">
+
+          <div class="hero-cta-group reveal-item">
+            <a href="#projects" class="btn btn-primary">
+              <span>EXPLORE PROJECTS</span>
+              <i data-lucide="arrow-down" class="btn-arrow"></i>
+            </a>
+            <a href="https://github.com/minalnain-09" target="_blank" rel="noopener noreferrer"
+              class="btn btn-secondary">
+              <i data-lucide="github" class="btn-icon"></i>
+              <span>GITHUB</span>
+            </a>
+            <a href="https://linkedin.com/in/minalnain" target="_blank" rel="noopener noreferrer"
+              class="btn btn-secondary">
+              <i data-lucide="linkedin" class="btn-icon"></i>
+              <span>LINKEDIN</span>
+            </a>
+          </div>
+
+          <!-- Polaroid Avatar / Side Card -->
+          <div class="hero-polaroid-wrapper reveal-item">
+            <div class="polaroid-card tilt-card" data-tilt>
+              <div class="washi-tape tape-top"></div>
+              <div class="polaroid-photo-frame">
+                <img src="assets/images/image.png" alt="Minal Nain Portrait" class="polaroid-img" />
+                <div class="status-sticker">⚡ Active Coder</div>
+              </div>
+              <div class="polaroid-caption">
+                <span class="handwritten">Minal Nain</span>
+                <span class="caption-sub">CSE Undergrad & Dev</span>
+              </div>
+            </div>
+
+            <!-- Floating Mini Badge -->
+            <div class="floating-note note-1 float-anim">
+              <div class="pin-dot"></div>
+              <p class="mono-text">Groq LLM + MERN</p>
+              <span class="note-emoji">🤖</span>
+            </div>
+
+            <div class="floating-note note-2 float-anim-delayed">
+              <div class="pin-dot"></div>
+              <p class="mono-text">94.2% XII / 96.7% X</p>
+              <span class="note-emoji">🏆</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== ABOUT & SKILLS SECTION ==================== -->
+    <section id="about" class="about-section section-padding">
+      <div class="container">
+
+        <div class="section-header reveal-item">
+          <div class="handwritten-label">about me!</div>
+          <h2 class="section-title">ABOUT</h2>
+          <p class="section-subtitle">Engineering clean logic, intuitive design, and AI-accelerated workflows.</p>
+        </div>
+
+        <div class="about-grid">
+
+          <!-- Left Column: Bio and Sticky Notes -->
+          <div class="about-bio-card note-card reveal-item">
+            <div class="washi-tape tape-center"></div>
+
+            <div class="sticky-header-tag">
+              <span>what's up</span>
+            </div>
+
+            <p class="bio-text lead-text">
+              I'm a <strong>Computer Science & Engineering student</strong> at Lovely Professional University who loves
+              transforming complex real-world challenges into simple, elegant digital tools.
+            </p>
+
+            <p class="bio-text">
+              From building <strong>AI data exploration interfaces</strong> with Groq LLMs to architecting
+              <strong>offline-first Progressive Web Apps</strong> for rural communities, I care deeply about edge cases,
+              responsive design, and shipping clean software that makes people's lives easier.
+            </p>
+
+            <div class="stats-row">
+              <div class="stat-box stat-yellow">
+                <span class="stat-num">9.07</span>
+                <span class="stat-lbl">CGPA at LPU</span>
+              </div>
+              <div class="stat-box stat-green">
+                <span class="stat-num">50+</span>
+                <span class="stat-lbl">Hours AI Training</span>
+              </div>
+              <div class="stat-box stat-blue">
+                <span class="stat-num">3+</span>
+                <span class="stat-lbl">Public Repos</span>
+              </div>
+            </div>
+
+            <!-- Soft Skills Pills -->
+            <div class="soft-skills-wrapper">
+              <span class="soft-pill"><i data-lucide="zap"></i> Problem Solving</span>
+              <span class="soft-pill"><i data-lucide="users"></i> Team Collaboration</span>
+              <span class="soft-pill"><i data-lucide="clock"></i> Time Management</span>
+              <span class="soft-pill"><i data-lucide="refresh-cw"></i> High Adaptability</span>
+            </div>
+          </div>
+
+          <!-- Right Column: Skills Matrix Ref-Style Tags -->
+          <div class="about-skills-card reveal-item">
+            <div class="skills-card-inner">
+
+              <div class="skill-category-block">
+                <h3 class="skill-cat-title">
+                  <span class="badge-dot dot-yellow"></span> Languages
+                </h3>
+                <div class="skill-tags">
+                  <span class="skill-chip chip-yellow">JavaScript</span>
+                  <span class="skill-chip chip-yellow">Python</span>
+                  <span class="skill-chip chip-yellow">C++</span>
+                  <span class="skill-chip chip-yellow">C</span>
+                  <span class="skill-chip chip-yellow">SQL</span>
+                  <span class="skill-chip chip-yellow">HTML5</span>
+                  <span class="skill-chip chip-yellow">CSS3</span>
+                </div>
+              </div>
+
+              <div class="skill-category-block">
+                <h3 class="skill-cat-title">
+                  <span class="badge-dot dot-green"></span> Frameworks & Web Tech
+                </h3>
+                <div class="skill-tags">
+                  <span class="skill-chip chip-green">React.js</span>
+                  <span class="skill-chip chip-green">Node.js</span>
+                  <span class="skill-chip chip-green">Express.js</span>
+                  <span class="skill-chip chip-green">Tailwind CSS</span>
+                  <span class="skill-chip chip-green">Bootstrap</span>
+                  <span class="skill-chip chip-green">Streamlit</span>
+                  <span class="skill-chip chip-green">Pandas</span>
+                </div>
+              </div>
+
+              <div class="skill-category-block">
+                <h3 class="skill-cat-title">
+                  <span class="badge-dot dot-blue"></span> Databases & Dev Tools
+                </h3>
+                <div class="skill-tags">
+                  <span class="skill-chip chip-blue">MongoDB</span>
+                  <span class="skill-chip chip-blue">MySQL</span>
+                  <span class="skill-chip chip-blue">Git</span>
+                  <span class="skill-chip chip-blue">GitHub</span>
+                  <span class="skill-chip chip-blue">Figma</span>
+                  <span class="skill-chip chip-blue">Groq API</span>
+                  <span class="skill-chip chip-blue">Matplotlib</span>
+                </div>
+              </div>
+
+              <!-- Retro decorative graphic item like ref.jpg -->
+              <div class="skills-retro-banner">
+                <img src="assets/images/retro_tech.jpg" alt="Retro Mac Hello graphic" class="retro-banner-img" />
+                <div class="retro-banner-text">
+                  <span class="handwritten-small">always learning & building</span>
+                  <p class="mono-text">Vibe coding & modern AI workflows</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== FEATURED PROJECTS SECTION ==================== -->
+    <section id="projects" class="projects-section section-padding">
+      <div class="container">
+
+        <div class="section-header reveal-item">
+          <div class="handwritten-label">explore my work!</div>
+          <h2 class="section-title">FEATURED WORKS</h2>
+          <p class="section-subtitle">Real-world full-stack and AI applications engineered from scratch.</p>
+        </div>
+
+        <div class="projects-grid">
+
+          <!-- Project 1: AI-Data Explorer -->
+          <article class="project-card project-card-ai reveal-item">
+            <div class="project-card-header">
+              <div class="project-date">
+                <i data-lucide="calendar" class="tag-icon-sm"></i> Jun 2026 – Jul 2026
+              </div>
+              <div class="project-type-badge badge-yellow">
+                AI / DATA SCIENCE
+              </div>
+            </div>
+
+            <div class="project-preview-frame">
+              <img src="assets/images/project_ai.jpg" alt="AI-Data Explorer Dashboard Interface" class="project-img" />
+              <div class="preview-overlay">
+                <a href="https://github.com/minalnain-09/AI-Data-Explorer" target="_blank" rel="noopener noreferrer"
+                  class="preview-btn">
+                  <span>VIEW REPO</span>
+                  <i data-lucide="external-link"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <div class="project-title-row">
+                <h3 class="project-name">AI-Data Explorer</h3>
+                <a href="https://github.com/minalnain-09/AI-Data-Explorer" target="_blank" rel="noopener noreferrer"
+                  class="github-link-btn" title="View Source on GitHub">
+                  <i data-lucide="github"></i>
+                </a>
+              </div>
+
+              <p class="project-desc">
+                An intelligent data exploration platform that enables users to upload raw CSV datasets and interact with
+                them in plain English. Translates natural language queries into automated statistical insights and
+                visualizations.
+              </p>
+
+              <ul class="project-highlights">
+                <li>
+                  <i data-lucide="check-circle-2" class="hl-icon"></i>
+                  <span>Engineered instant data analysis pipelines with Pandas (dataset shape, column types & summary
+                    stats).</span>
+                </li>
+                <li>
+                  <i data-lucide="check-circle-2" class="hl-icon"></i>
+                  <span>Integrated high-speed Groq LLM API to translate natural questions into data insights without
+                    writing code.</span>
+                </li>
+                <li>
+                  <i data-lucide="check-circle-2" class="hl-icon"></i>
+                  <span>Implemented secure credential management via python-dotenv for safe deployment workflows.</span>
+                </li>
+              </ul>
+
+              <div class="tech-stack-row">
+                <span class="tech-pill">Python</span>
+                <span class="tech-pill">Streamlit</span>
+                <span class="tech-pill">Pandas</span>
+                <span class="tech-pill">Groq API</span>
+                <span class="tech-pill">Matplotlib</span>
+                <span class="tech-pill">python-dotenv</span>
+              </div>
+
+              <div class="project-footer">
+                <a href="https://github.com/minalnain-09/AI-Data-Explorer" target="_blank" rel="noopener noreferrer"
+                  class="view-project-btn">
+                  <span>EXPLORE ON GITHUB</span>
+                  <i data-lucide="arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Agri Help -->
+          <article class="project-card project-card-agri reveal-item">
+            <div class="project-card-header">
+              <div class="project-date">
+                <i data-lucide="calendar" class="tag-icon-sm"></i> May 2026 – Jun 2026
+              </div>
+              <div class="project-type-badge badge-green">
+                FULL-STACK & PWA
+              </div>
+            </div>
+
+            <div class="project-preview-frame">
+              <img src="assets/images/project_agri.jpg" alt="Agri Help Web Application Interface" class="project-img" />
+              <div class="preview-overlay">
+                <a href="https://github.com/minalnain-09/AgriHelp" target="_blank" rel="noopener noreferrer"
+                  class="preview-btn">
+                  <span>VIEW REPO</span>
+                  <i data-lucide="external-link"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <div class="project-title-row">
+                <h3 class="project-name">Agri Help</h3>
+                <a href="https://github.com/minalnain-09/AgriHelp" target="_blank" rel="noopener noreferrer"
+                  class="github-link-btn" title="View Source on GitHub">
+                  <i data-lucide="github"></i>
+                </a>
+              </div>
+
+              <p class="project-desc">
+                A community-centric web application crafted to support farmers and agricultural stakeholders with
+                real-time decision-making resources, modern agricultural information, and resilient offline Progressive
+                Web App (PWA) functionality.
+              </p>
+
+              <ul class="project-highlights">
+                <li>
+                  <i data-lucide="check-circle-2" class="hl-icon"></i>
+                  <span>Engineered core interactive modules for crop data management, resource discovery, and weather
+                    tools.</span>
+                </li>
+                <li>
+                  <i data-lucide="check-circle-2" class="hl-icon"></i>
+                  <span>Architected Progressive Web App (PWA) features enabling offline availability for farmers in
+                    low-connectivity areas.</span>
+                </li>
+                <li>
+                  <i data-lucide="check-circle-2" class="hl-icon"></i>
+                  <span>Integrated secure authentication with Clerk and seamless payment workflows with Stripe
+                    API.</span>
+                </li>
+              </ul>
+
+              <div class="tech-stack-row">
+                <span class="tech-pill">React.js</span>
+                <span class="tech-pill">Node.js</span>
+                <span class="tech-pill">Express.js</span>
+                <span class="tech-pill">MongoDB</span>
+                <span class="tech-pill">Tailwind CSS</span>
+                <span class="tech-pill">Clerk Auth</span>
+                <span class="tech-pill">Stripe API</span>
+                <span class="tech-pill">PWA</span>
+              </div>
+
+              <div class="project-footer">
+                <a href="https://github.com/minalnain-09/AgriHelp" target="_blank" rel="noopener noreferrer"
+                  class="view-project-btn">
+                  <span>EXPLORE ON GITHUB</span>
+                  <i data-lucide="arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== TRAINING & CERTIFICATES ==================== -->
+    <section id="skills-training" class="training-section section-padding">
+      <div class="container">
+
+        <div class="section-header reveal-item">
+          <div class="handwritten-label">continuous learning</div>
+          <h2 class="section-title">TRAINING & CERTIFICATES</h2>
+          <p class="section-subtitle">Intensives, language proficiencies, and competitive certifications.</p>
+        </div>
+
+        <div class="training-grid">
+
+          <!-- Training 1: German -->
+          <div class="training-card reveal-item">
+            <div class="washi-tape tape-left"></div>
+            <div class="card-icon-header">
+              <span class="flag-icon">🇩🇪</span>
+              <span class="date-badge">Feb 2026 – Present</span>
+            </div>
+            <h3 class="card-heading">German Language A1/A2 Level</h3>
+            <p class="card-sub">CEFR Proficiency Level</p>
+            <p class="card-description">
+              Foundational German grammar, structured vocabulary, and everyday conversational speaking. Built a working
+              vocabulary of 500+ common words with regular listening comprehension practice.
+            </p>
+            <div class="badge-list">
+              <span class="badge-mini">CEFR A1/A2</span>
+              <span class="badge-mini">500+ Vocab Base</span>
+              <span class="badge-mini">Conversational</span>
+            </div>
+          </div>
+
+          <!-- Training 2: AI Agents Kaggle -->
+          <div class="training-card card-highlight reveal-item">
+            <div class="washi-tape tape-right"></div>
+            <div class="card-icon-header">
+              <span class="ai-icon">🤖</span>
+              <span class="date-badge">Jun 2026 – Jul 2026</span>
+            </div>
+            <h3 class="card-heading">5-Day AI Agents: Vibe Coding Course</h3>
+            <p class="card-sub">Kaggle Intensive Certificate</p>
+            <p class="card-description">
+              Rapid, iterative AI-assisted coding workflows. Built and refined agentic tools through fast prompt-to-code
+              cycles, applying agentic design patterns and maintaining high code standards.
+            </p>
+            <div class="badge-list">
+              <span class="badge-mini">Kaggle Certified</span>
+              <span class="badge-mini">Agentic Workflows</span>
+              <span class="badge-mini">Vibe Coding</span>
+            </div>
+          </div>
+
+          <!-- Certificate 1: Times Of India -->
+          <div class="training-card cert-card reveal-item">
+            <div class="cert-header">
+              <div class="cert-icon-wrap bg-yellow">
+                <i data-lucide="award"></i>
+              </div>
+              <span class="date-badge">July 2026</span>
+            </div>
+            <h3 class="card-heading">Times Critical Thinking Championship</h3>
+            <p class="card-sub">The Times Of India</p>
+            <p class="card-description">
+              Recognized for high-order analytical reasoning, structured problem formulation, and critical decision
+              evaluation under competition scenarios.
+            </p>
+            <a href="https://drive.google.com/file/d/1asy7UAdfPfIrGkuwYLaFiBqKMMdj_-3s/view?usp=sharing" target="_blank"
+              rel="noopener noreferrer" class="cert-link-btn">
+              <span>View Certificate</span>
+              <i data-lucide="external-link"></i>
+            </a>
+          </div>
+
+          <!-- Certificate 2: IIT Ropar -->
+          <div class="training-card cert-card reveal-item">
+            <div class="cert-header">
+              <div class="cert-icon-wrap bg-green">
+                <i data-lucide="cpu"></i>
+              </div>
+              <span class="date-badge">Feb 2026</span>
+            </div>
+            <h3 class="card-heading">AI Fusion Prompt Hackathon</h3>
+            <p class="card-sub">IIT Ropar</p>
+            <p class="card-description">
+              National-level AI hackathon focused on advanced prompt engineering architectures, LLM pipeline
+              optimization, and multi-modal problem solving.
+            </p>
+            <a href="https://drive.google.com/file/d/12i9CEYTf4_EKrVAdz3E2nLiY-ypc76gX/view?usp=sharing" target="_blank"
+              rel="noopener noreferrer" class="cert-link-btn">
+              <span>View Certificate</span>
+              <i data-lucide="external-link"></i>
+            </a>
+          </div>
+
+          <!-- Certificate 3: Ignite Change -->
+          <div class="training-card cert-card reveal-item">
+            <div class="cert-header">
+              <div class="cert-icon-wrap bg-pink">
+                <i data-lucide="mic"></i>
+              </div>
+              <span class="date-badge">March 2026</span>
+            </div>
+            <h3 class="card-heading">Competitive Public Speaking</h3>
+            <p class="card-sub">Ignite Change</p>
+            <p class="card-description">
+              Competitive speaking event demonstrating strong oratorical presence, structured rhetoric, impromptu debate
+              skills, and engaging stage delivery.
+            </p>
+            <a href="https://drive.google.com/file/d/1yANHE1kUaNwVicW9fOSDEfF6oHeCm2NB/view?usp=sharing" target="_blank"
+              rel="noopener noreferrer" class="cert-link-btn">
+              <span>View Certificate</span>
+              <i data-lucide="external-link"></i>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== EDUCATION SECTION ==================== -->
+    <section id="education" class="education-section section-padding">
+      <div class="container">
+
+        <div class="section-header reveal-item">
+          <div class="handwritten-label">academic journey</div>
+          <h2 class="section-title">EDUCATION</h2>
+          <p class="section-subtitle">Strong academic foundation in computer science, mathematics, and sciences.</p>
+        </div>
+
+        <div class="timeline-wrapper">
+          <div class="timeline-spine"></div>
+
+          <!-- LPU -->
+          <div class="timeline-item reveal-item">
+            <div class="timeline-dot dot-lpu">
+              <i data-lucide="graduation-cap"></i>
+            </div>
+            <div class="timeline-card">
+              <div class="washi-tape tape-top"></div>
+              <div class="timeline-card-header">
+                <div>
+                  <h3 class="timeline-school">Lovely Professional University</h3>
+                  <p class="timeline-loc"><i data-lucide="map-pin"></i> Phagwara, Punjab</p>
+                </div>
+                <div class="grade-badge grade-yellow">
+                  <span class="grade-label">CGPA</span>
+                  <span class="grade-val">9.07</span>
+                </div>
+              </div>
+              <div class="timeline-degree">
+                <strong>Bachelor of Technology</strong> — Computer Science and Engineering
+              </div>
+              <div class="timeline-date">
+                <i data-lucide="calendar"></i> Aug 2025 – Present
+              </div>
+              <p class="timeline-details">
+                Coursework in Data Structures & Algorithms, Object-Oriented Programming, Database Management Systems,
+                Computer Networks, and AI methodologies.
+              </p>
+            </div>
+          </div>
+
+          <!-- Bright Scholar XII -->
+          <div class="timeline-item reveal-item">
+            <div class="timeline-dot dot-school">
+              <i data-lucide="book-open"></i>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-card-header">
+                <div>
+                  <h3 class="timeline-school">Bright Scholar School</h3>
+                  <p class="timeline-loc"><i data-lucide="map-pin"></i> Sonipat, Haryana</p>
+                </div>
+                <div class="grade-badge grade-green">
+                  <span class="grade-label">Class XII</span>
+                  <span class="grade-val">94.2%</span>
+                </div>
+              </div>
+              <div class="timeline-degree">
+                <strong>Higher Secondary Education</strong> (Science & Mathematics Stream)
+              </div>
+              <div class="timeline-date">
+                <i data-lucide="calendar"></i> Mar 2023 – May 2025
+              </div>
+              <p class="timeline-details">
+                Excellence in analytical subjects, computer science fundamentals, and active student representation.
+              </p>
+            </div>
+          </div>
+
+          <!-- Bright Scholar X -->
+          <div class="timeline-item reveal-item">
+            <div class="timeline-dot dot-school">
+              <i data-lucide="sparkles"></i>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-card-header">
+                <div>
+                  <h3 class="timeline-school">Bright Scholar School</h3>
+                  <p class="timeline-loc"><i data-lucide="map-pin"></i> Sonipat, Haryana</p>
+                </div>
+                <div class="grade-badge grade-blue">
+                  <span class="grade-label">Class X</span>
+                  <span class="grade-val">96.7%</span>
+                </div>
+              </div>
+              <div class="timeline-degree">
+                <strong>Secondary Education</strong>
+              </div>
+              <div class="timeline-date">
+                <i data-lucide="calendar"></i> Mar 2022 – May 2023
+              </div>
+              <p class="timeline-details">
+                Top percentile academic distinction with balanced extracurriculars in debate and competitive public
+                speaking.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== ACHIEVEMENTS SECTION ==================== -->
+    <section id="achievements" class="achievements-section section-padding">
+      <div class="container">
+
+        <div class="section-header reveal-item">
+          <div class="handwritten-label">milestones & impact</div>
+          <h2 class="section-title">ACHIEVEMENTS</h2>
+          <p class="section-subtitle">Highlights from hackathons, public speaking, and self-directed engineering.</p>
+        </div>
+
+        <div class="achievements-grid">
+
+          <div class="achievement-card reveal-item">
+            <div class="ach-icon-box ach-yellow">
+              <i data-lucide="mic-2"></i>
+            </div>
+            <div class="ach-content">
+              <h3 class="ach-title">Public Speaking & Communication</h3>
+              <p class="ach-text">
+                Actively participated in competitive public speaking events, showcasing crisp communication, compelling
+                storytelling, and confident stage presence.
+              </p>
+            </div>
+          </div>
+
+          <div class="achievement-card reveal-item">
+            <div class="ach-icon-box ach-green">
+              <i data-lucide="users"></i>
+            </div>
+            <div class="ach-content">
+              <h3 class="ach-title">Hackathon Coordination & Leadership</h3>
+              <p class="ach-text">
+                Recognized for effective team collaboration and sprint planning while coordinating a 4-member team
+                during an intensive hackathon build.
+              </p>
+            </div>
+          </div>
+
+          <div class="achievement-card reveal-item">
+            <div class="ach-icon-box ach-blue">
+              <i data-lucide="flame"></i>
+            </div>
+            <div class="ach-content">
+              <h3 class="ach-title">50+ Hours Self-Paced Tech Mastery</h3>
+              <p class="ach-text">
+                Completed 50+ hours of self-paced learning across AI agents, full-stack web engineering, and product
+                thinking via certified courses.
+              </p>
+            </div>
+          </div>
+
+          <div class="achievement-card reveal-item">
+            <div class="ach-icon-box ach-pink">
+              <i data-lucide="git-pull-request"></i>
+            </div>
+            <div class="ach-content">
+              <h3 class="ach-title">Active Open-Source Contributor</h3>
+              <p class="ach-text">
+                Regularly maintaining and committing to 3+ public repositories, practicing modern git workflows, clean
+                documentation, and modular architectures.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== CONTACT SECTION (Ref.jpg style) ==================== -->
+    <section id="contact" class="contact-section section-padding">
+      <div class="container">
+
+        <div class="contact-card-wrapper reveal-item">
+
+          <!-- Handwritten label -->
+          <div class="handwritten-banner">
+            <span>say hi</span>
+            <svg width="40" height="20" viewBox="0 0 40 20" fill="none">
+              <path d="M4 16C16 4 28 6 36 12M36 12L30 8M36 12L34 18" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" />
+            </svg>
+          </div>
+
+          <!-- Bold Contact Box (Ref style) -->
+          <div class="contact-title-box">
+            <h2 class="contact-huge-title">CONTACT</h2>
+          </div>
+
+          <!-- Sticky Note Inner Message (Ref style) -->
+          <div class="contact-note-box">
+            <div class="washi-tape tape-center"></div>
+            <p class="contact-note-heading">GOT A PROJECT, A HARD PROBLEM, OR JUST WANT TO SAY HI? SEND IT OVER. I READ
+              EVERY MESSAGE.</p>
+
+            <div class="email-copy-bar">
+              <a href="mailto:minalnain09@gmail.com" class="email-address-link">minalnain09@gmail.com</a>
+              <button id="copyEmailBtn" class="copy-btn" title="Copy email address" aria-label="Copy email">
+                <i data-lucide="copy" class="copy-icon"></i>
+                <span class="copy-tooltip">Copied!</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Status phrase like ref -->
+          <div class="contact-status-note">
+            <span class="handwritten-status">~ Open To new work and good problems</span>
+            <a href="mailto:minalnain09@gmail.com" class="contact-email-small">minalnain09@gmail.com</a>
+          </div>
+
+          <!-- Social Links Bar (Ref style) -->
+          <div class="contact-social-row">
+            <a href="https://linkedin.com/in/minalnain" target="_blank" rel="noopener noreferrer"
+              class="social-pill-link">
+              <i data-lucide="linkedin"></i>
+              <span>LINKEDIN</span>
+            </a>
+            <a href="https://github.com/minalnain-09" target="_blank" rel="noopener noreferrer"
+              class="social-pill-link">
+              <i data-lucide="github"></i>
+              <span>GITHUB</span>
+            </a>
+            <a href="tel:+919467779047" class="social-pill-link">
+              <i data-lucide="phone"></i>
+              <span>+91-9467779047</span>
+            </a>
+            <a href="mailto:minalnain09@gmail.com" class="social-pill-link">
+              <i data-lucide="mail"></i>
+              <span>EMAIL</span>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <span class="footer-monogram">✦ MINAL NAIN</span>
+        <span class="footer-role">Computer Science Undergrad & Software Developer</span>
+      </div>
+      <div class="footer-right">
+        <span class="footer-copy">Built with HTML5, CSS3 & JavaScript · Inspired by Minimalist Studio Aesthetics</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="scripts/main.js"></script>
+  <script>
+    // Initialize Lucide icons
+    lucide.createIcons();
+  </script>
+</body>
+
+</html>
